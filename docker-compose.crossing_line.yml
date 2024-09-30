@@ -1,0 +1,9 @@
+services:
+  crossing_line_detection_1:
+    image: registry.oryza.vn/crossing-line-detection:latest
+    env_file:
+      - .env
+    ports:
+      - "34000:34000"
+    volumes:
+      - "/dev/shm:/dev/shm"

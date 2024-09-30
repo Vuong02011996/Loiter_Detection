@@ -1,0 +1,10 @@
+apps:
+  - script : ./server_cross_line.py
+    name   : 'cross_line_production_30002'
+#    interpreter: /home/gg_greenlab/anaconda3/envs/openmmlab/bin/python
+    interpreter: /home/oryza/miniconda3/envs/loitering_envs/bin/python
+    args: ".env_production"
+  - script: ./run_api_loop_cross_line.py
+    name: 'run_api_loop_cross_line'
+    interpreter: /home/oryza/miniconda3/envs/head_body_envs/bin/python
+

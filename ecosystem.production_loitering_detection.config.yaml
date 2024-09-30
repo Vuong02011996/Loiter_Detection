@@ -1,0 +1,10 @@
+apps:
+  - script : ./server_loitering.py
+    name   : 'loitering_production_30001'
+#    interpreter: /home/gg_greenlab/anaconda3/envs/openmmlab/bin/python
+    interpreter: /home/oryza/miniconda3/envs/loitering_envs/bin/python
+    args: ".env_production"
+  - script: ./run_api_loop_loitering.py
+    name: 'run_api_loop_loitering'
+    interpreter: /home/oryza/miniconda3/envs/head_body_envs/bin/python
+
